@@ -1,16 +1,22 @@
-﻿namespace WindowsFormsApp1
+﻿using System;
+
+
+namespace WindowsFormApp1
 {
     partial class Form1
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Syntax;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+
+
+
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -19,67 +25,78 @@
             }
             base.Dispose(disposing);
         }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.Syntax = new System.Windows.Forms.Button();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(505, 61);
+
+
+            //button1
+            this.button1.Location = new System.Drawing.Point(94, 253);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 36);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 37);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Run";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(116, 65);
+
+            //textBox1
+            this.textBox1.Location = new System.Drawing.Point(85, 200);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(315, 26);
-            this.textBox1.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(92, 155);
+            this.textBox1.Size = new System.Drawing.Size(228, 26);
+            this.textBox1.TabIndex = 0;
+
+            //pictureBox1
+            this.pictureBox1.Location = new System.Drawing.Point(430, 28);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(367, 162);
-            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.Size = new System.Drawing.Size(273, 262);
+            this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
+
+            //Syntax
+            this.Syntax.Location = new System.Drawing.Point(212, 253);
+            this.Syntax.Name = "Syntax";
+            this.Syntax.Size = new System.Drawing.Size(75, 37);
+            this.Syntax.TabIndex = 3;
+            this.Syntax.Text = "Syntax";
+            this.Syntax.UseVisualStyleBackColor = true;
+
+            //richTextBox1
+            this.richTextBox1.Location = new System.Drawing.Point(85, 28);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(252, 166);
+            this.richTextBox1.TabIndex = 4;
+            this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+
             // Form1
-            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.Syntax);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
+
         }
 
-        #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+
     }
 }
-
